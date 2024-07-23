@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
+
+    <!-- SCROLL CDN  USING SLICK-->
+
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- link slick css file --- -->
+    <link rel="stylesheet" href="./css/slick.min.css">
+    <!-- =========== : Scroll cdn : ===================
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <div>
+                <a href="#"><img src="./public/images/myntra_logo.webp" alt="logo" class="logo"></a>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="about.html">About&darr;</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html" class="dropdown-item">Our Story</a></li>
+                            <li><a href="team.html" class="dropdown-item">Our Team</a></li>
+                            <li><a href="FAQs.html" class="dropdown-item">FAQs</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a class="nav-link" href="products.html">Products</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="icons">
+                <a href="" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>
+                <a href="profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a>
+                <a href="#"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+                <a href="addToCart.html"><i class="fa-solid fa-cart-shopping"> 0</i><span>Cart</span></a>
+            </div>
+
+            <!--  ---------------------  : SEARCH BAR : ============================================= -->
+            <div id="search-bar">
+                <div class="btn_hover1 close-search">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <form class="search-form">
+                    <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                    <input type="search" id="search-box" placeholder="Search your products here ...">
+                    <button type="submit" class="search-btn">Search <span></span></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===-======================= STARTS : Profile  : > LOGIN / CREATE ACCOUNT ====================================== -->
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="row">
+                <div class="login">
+                    <h1>LOGIN</h1>
+
+                    <form action="#" class="profile-form">
+                        <span>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" role="alert" required aria-required="true">
+                        </span>
+
+                        <span>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" role="alert" required
+                                aria-required="true">
+                        </span>
+
+                        <input type="submit" value="SIGN IN" class="login-btn">
+
+                        <a class="forget-pass" href=""><strong>FORGOT YOUR PASSWORD?</strong></a></p>
+                    </form>
+                </div>
+
+                <div class="create-acc">
+                    <h1>CREATE ACCOUNT</h1>
+                    <p class="info-heading">We never save credit card information.</p>
+                    <p class="info-heading">Registering makes checkout fast and easy and saves your order information in
+                        your account.</p>
+
+                    <form action="#" class="profile-form">
+                        <span>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </span>
+
+                        <span>
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </span>
+
+                        <span>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" role="alert" required aria-required="true">
+                        </span>
+
+                        <span>
+                            <label for="password">PASSWORD*</label>
+                            <input type="password" name="password" id="password" role="alert" required
+                                aria-required="true">
+                        </span>
+
+                        <span>
+                            <label for="password">CONFIRM PASSWORD*</label>
+                            <input type="password" name="password" id="password" role="alert" required
+                                aria-required="true">
+                        </span>
+
+                        <div class="checkbox-txt">
+                            <input type="checkbox" id="checkbox" required> <label for="checkbox">Email me with news and
+                                offers</label>
+                        </div>
+
+
+                        <p class="policy-note">Note: You can opt-out at any time. See our
+                            <strong><a href="">Privacy Policy</a></strong>
+                            .
+                        </p>
+
+                        <input type="submit" value="CREATE" class="create-btn">
+                    </form>
+                    <p class="policy-heading">By creating an account, you agree to our <a href="">Terms</a> and <a
+                            href="">Privacy & Cookies
+                            Policy</a>.</p>
+
+                    <p class="required"><strong>* REQUIRED FIELDS</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===-======================= ENDSs : Profile  : > LOGIN / CREATE ACCOUNT ====================================== -->
+
+
+    <section class="section section--sign-up">
+        <div class="sign-up--container">
+            <h1>Want First Dibs?</h1>
+            <p>Join our email list and be the first to know about new limited edition products,material innovations, and
+                lots
+                of other
+                fun updates.</p>
+
+            <div class="sign-up--content">
+                <input type="email" name="email" class="email" placeholder="Enter Your Email Address">
+                <button class="sign-up-btn">sign up</button>
+            </div>
+
+            <p class="note-txt">Note: You can opt-out at any time. See our <a href="#">Privacy Policy</a> and <a
+                    href="#">Terms</a> .</p>
+        </div>
+    </section>
+
+    <!--  ----------- : Footer Section : ================= -->
+    <footer>
+        <div class="footer-logo">
+            <span class="logo-content">
+                <a href="#hero-section"><img src="./public/images/myntra_logo.webp" alt="logo" class="logo"></a>
+            </span>
+
+            <span class="copy-right">
+                <p>&copy;2024 In-Ecomerce, All Rights Reserved.
+                    <a href="#">Terms</a>, <a href="">Privacy</a> and <a href="#">Accessibility</a>
+                </p>
+            </span>
+
+            <span>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </span>
+        </div>
+
+        <div class="footer-container">
+            <div>
+                <h2>HELP</h2>
+                <ul>
+                    <li><a href="#">1-888-963-8944</a></li>
+                    <li><a href="#">1-814-251-9966 (Text)</a></li>
+                    <li><a href="#">help@allbirds.com</a></li>
+                    <li><a href="#">Returns/Exchanges</a></li>
+                    <li><a href="#">FAQ/Contact Us</a></li>
+                    <li><a href="#">Afterpay</a></li>
+                    <li><a href="#">Payment Method :</a></li>
+                    <li><img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" /></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>SHOP</h2>
+                <ul>
+                    <li><a href="#">Computer Store</a></li>
+                    <li><a href="#">Laptop Store</a></li>
+                    <li><a href="#">help@allbirds.com</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Shoe Finder</a></li>
+                    <li><a href="#">Socks</a></li>
+                    <li><a href="#">Men's Apparel</a></li>
+                    <li><a href="#">Women's Apparel</a></li>
+                    <li><a href="#">Sales & Discount</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>COMPANY</h2>
+                <ul>
+                    <li><a href="#">Our Stores</a></li>
+                    <li><a href="#">Our Materials</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Bulk Orders</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-up"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button>
+
+    <script>
+        // search - bar toggle : ============== >
+        const searchIcon = document.querySelector(".search-icon");
+        const closeSearch = document.querySelector(".close-search");
+        const searchpanel = document.getElementById("search-bar");
+
+        const open_search = () => {
+            if (searchpanel) {
+                searchpanel.style.height = `100%`;
+                searchpanel.style.borderRadius = `0`;
+            } else {
+                console.error("Search pannel not found!");
+            }
+        };
+
+        const close_search = () => {
+            if (searchpanel) {
+                searchpanel.style.height = `0`;
+                searchpanel.style.borderTopLeftRadius = `100%`;
+                searchpanel.style.borderTopRightRadius = `100%`;
+            } else {
+                console.error("Search pannel not found!");
+            }
+        };
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                searchpanel.style.height = `0`;
+                searchpanel.style.borderTopLeftRadius = `100%`;
+                searchpanel.style.borderTopRightRadius = `100%`;
+            }
+        });
+
+        searchIcon.addEventListener("click", (e) => {
+            e.preventDefault()
+            open_search()
+        });
+
+        closeSearch.addEventListener("click", close_search);
+
+        // 
+
+        // < ===============================  : Scroll to Top btn : ========================================================= >
+        const scrollTopBtn = document.querySelector(".scroll-up");
+
+        window.onscroll = () => {
+            scrollFunction();
+        };
+
+        const scrollFunction = () => {
+            if (
+                document.body.scrollTop > 350 ||
+                document.documentElement.scrollTop > 350
+            ) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+    <!-- <script type="module" src="main.js"></script> -->
+</body>
+
+</html>

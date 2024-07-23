@@ -1,0 +1,142 @@
+body {
+  background-color: rgba(240, 255, 255, 0.463);
+}
+
+.faqs-section {
+  padding-top: 5rem;
+  /* background: linear-gradient(11deg, #6931aa1a 0.01%, #b520a429 100%); */
+  height: auto;
+  width: 70%;
+  font-family: "Quicksand", sans-serif;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+}
+
+.faqs-container {
+  /* border: 2px solid darkblue; */
+  /* margin: 6rem 0 2rem 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 4rem;
+}
+
+.faqs-titles {
+  margin-top: 2rem;
+  /* border: 2px solid rebeccapurple; */
+  height: fit-content;
+  width: 100%;
+}
+
+.faqs-titles ul {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+
+  list-style: none;
+
+  & li a {
+    color: gray;
+    position: relative;
+    display: inline-block;
+  }
+
+  & li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    background: dimgray;
+    bottom: -3px;
+    left: 0px;
+    transition: 0.3s;
+  }
+
+  & li a:hover:after {
+    width: 100%;
+  }
+
+  & li a {
+    text-decoration: none;
+  }
+}
+
+.faqs-content {
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+#shipping,
+#orders-and-payment,
+#tracking,
+#returns-and-exchanges,
+#products,
+#others {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+
+  & h1 {
+    color: #6b0757;
+    text-shadow: 0 0 5px rgb(147, 146, 146);
+    font-weight: 400;
+    font-size: 3rem;
+    font-family: monospace;
+  }
+}
+
+.faqs-content .faq {
+  display: block;
+  border-bottom: 2px solid dimgray;
+
+  .faqs-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    & h3 {
+      color: #62034f;
+      font-weight: 400;
+    }
+  }
+
+  .faqs-answer {
+    max-width: 800px;
+    padding: 0.3rem 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease;
+    /* border: 2px solid red; */
+
+    & p {
+      line-height: 1.5;
+      padding: 0.5rem 0;
+      color: dimgrey;
+    }
+  }
+}
+
+.faq.active .faqs-answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+
+.faq.active .fa-chevron-down {
+  transform: rotate(180deg);
+}
+.fa-chevron-down {
+  transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}

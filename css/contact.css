@@ -1,0 +1,152 @@
+/*  =================================================================== : CONTACT PAGE : ==> STARTS HERE : ==========================>> */
+
+.contact-section {
+  padding-top: 6rem;
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+}
+
+.contact-container {
+  padding: 5rem 0 3rem 0;
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.contact-info {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-box span .social-icons {
+  display: flex;
+  gap: 2rem;
+
+  & a {
+    color: rgba(54, 18, 68, 0.82);
+    font-size: 1.4rem;
+    transition: all 0.3s;
+  }
+  & a:hover {
+    color: rgba(83, 33, 102, 0.664);
+    transform: translate(0, -20%);
+  }
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+}
+
+.contact-info .contact-box h1 {
+  padding: 0 0 0.4rem 0;
+  color: rgba(54, 18, 68, 0.82);
+  letter-spacing: 0.4px;
+}
+
+.contact-info .contact-box p {
+  color: rgba(97, 68, 27, 0.711);
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+/* ===== : contact-content : =============== */
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+
+.contact-content form {
+  /* border: 2px solid darkblue; */
+  margin-left: 2rem;
+}
+
+.form-inputs {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-inputs span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+  align-items: start;
+}
+
+.form-inputs #email,
+.form-inputs #first-name,
+.form-inputs #last-name,
+.form-inputs #number,
+.form-inputs #zip {
+  width: 20vw;
+  height: 2.7rem;
+  font-size: 1.1rem;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color: white;
+}
+
+.form-inputs #message {
+  width: 20vw;
+  height: auto;
+  font-size: 1rem;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color: white;
+}
+
+.form-inputs #email:focus,
+#number:focus,
+#zip:focus,
+#message:focus,
+#first-name:focus,
+#last-name:focus {
+  outline: 1px solid rgba(206, 201, 201, 0.476);
+  box-shadow: 0 0 10px rgba(108, 106, 106, 0.819);
+}
+
+.form-inputs .checkbox-txt {
+  margin: 1rem 0 1rem 0;
+}
+
+.form-inputs .checkbox-txt #checkbox {
+  border-radius: 50%;
+}
+
+.submit-btn {
+  font-size: 0.8rem;
+  padding: 0.6em 1.2rem;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border: 2px solid black;
+  cursor: pointer;
+  /* font-size: 1rem; */
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: transparent;
+  border: 2px solid black;
+  box-shadow: 0 0 7px rgba(108, 106, 106, 0.819);
+  color: rgb(33, 33, 33);
+}

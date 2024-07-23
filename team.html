@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
+
+    <!-- SCROLL CDN  USING SLICK-->
+
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- link slick css file --- -->
+    <link rel="stylesheet" href="./css/slick.min.css">
+    <!-- =========== : Scroll cdn : =================== -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <div>
+                <a href="#"><img src="./public/images/myntra_logo.webp" alt="logo" class="logo"></a>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="about.html">About&darr;</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html" class="dropdown-item">Our Story</a></li>
+                            <li><a href="team.html" class="dropdown-item">Our Team</a></li>
+                            <li><a href="FAQs.html" class="dropdown-item">FAQs</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a class="nav-link" href="products.html">Products</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="icons">
+                <a href="" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>
+                <a href="profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a>
+                <a href="#"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+                <a href="addToCart.html"><i class="fa-solid fa-cart-shopping"> 0</i><span>Cart</span></a>
+            </div>
+
+            <!--  ---------------------  : SEARCH BAR : ============================================= -->
+            <div id="search-bar">
+                <div class="btn_hover1 close-search">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <form class="search-form">
+                    <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                    <input type="search" id="search-box" placeholder="Search your products here ...">
+                    <button type="submit" class="search-btn">Search <span></span></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================================== : TEAM START : ==========----------------==========================================  -->
+
+    <section class="team-section">
+        <div class="team-container">
+            <div class="team-content">
+                <div class="team-content--text">
+                    <div class="heading-line">
+                        <hr class="team-hr1">
+                        <h5 class="heading">OUR TEAM</h5>
+                    </div>
+
+                    <h2>Meet Our Team of Professionals.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit provident iusto totam
+                        magni
+                        nulla temporibus dicta nam numquam incidunt?</p>
+                </div>
+
+                <div class="team-content--btn">
+                    <a href="">All Members</a>
+                </div>
+            </div>
+
+            <div class="team-slider">
+                <div class="team-box">
+                    <img src="./public/images/story-3.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <h3>Alizabat Koi</h3>
+                            <h4>Designer</h4>
+                            <div class="team-icons">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-box">
+                    <img src="./public/images/story-6.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <h3>Katy Pary</h3>
+                            <h4>UI / UX</h4>
+                            <div class="team-icons">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-box">
+                    <img src="./public/images/img12.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <h3>David Laid</h3>
+                            <h4>Seo Expert</h4>
+                            <div class="team-icons">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-box">
+                    <img src="./public/images/story-5.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <h3>Alia Kapoor</h3>
+                            <h4>Data Scientist</h4>
+                            <div class="team-icons">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-box">
+                    <img src="./public/images/story-1.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <h3>Muhammad Hassan</h3>
+                            <h4>Web Developer</h4>
+                            <div class="team-icons">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-box">
+                    <img src="./public/images/story-4.jpg" alt="">
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <h3>David Laid</h3>
+                            <h4>AI / ML</h4>
+                            <div class="team-icons">
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-btn">
+            <div>
+                <h4>Ask A Question To Our Amazing Team, And Get, Responsive Quickly.</h4>
+                <a href="" class="">Contact Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================= : TEAM - END : ================================================================= = -->
+
+    <section class="section section--sign-up">
+        <div class="sign-up--container">
+            <h1>Want First Dibs?</h1>
+            <p>Join our email list and be the first to know about new limited edition products,material innovations, and
+                lots
+                of other
+                fun updates.</p>
+
+            <div class="sign-up--content">
+                <input type="email" name="email" class="email" placeholder="Enter Your Email Address">
+                <button class="sign-up-btn">sign up</button>
+            </div>
+
+            <p class="note-txt">Note: You can opt-out at any time. See our <a href="#">Privacy Policy</a> and <a
+                    href="#">Terms</a> .</p>
+        </div>
+    </section>
+
+    <!--  ----------- : Footer Section : ================= -->
+    <footer>
+        <div class="footer-logo">
+            <span class="logo-content">
+                <a href="#hero-section"><img src="./public/images/myntra_logo.webp" alt="logo" class="logo"></a>
+            </span>
+
+            <span class="copy-right">
+                <p>&copy;2024 In-Ecomerce, All Rights Reserved.
+                    <a href="#">Terms</a>, <a href="">Privacy</a> and <a href="#">Accessibility</a>
+                </p>
+            </span>
+
+            <span>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </span>
+        </div>
+
+        <div class="footer-container">
+            <div>
+                <h2>HELP</h2>
+                <ul>
+                    <li><a href="#">1-888-963-8944</a></li>
+                    <li><a href="#">1-814-251-9966 (Text)</a></li>
+                    <li><a href="#">help@allbirds.com</a></li>
+                    <li><a href="#">Returns/Exchanges</a></li>
+                    <li><a href="#">FAQ/Contact Us</a></li>
+                    <li><a href="#">Afterpay</a></li>
+                    <li><a href="#">Payment Method :</a></li>
+                    <li><img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" /></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>SHOP</h2>
+                <ul>
+                    <li><a href="#">Computer Store</a></li>
+                    <li><a href="#">Laptop Store</a></li>
+                    <li><a href="#">help@allbirds.com</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Shoe Finder</a></li>
+                    <li><a href="#">Socks</a></li>
+                    <li><a href="#">Men's Apparel</a></li>
+                    <li><a href="#">Women's Apparel</a></li>
+                    <li><a href="#">Sales & Discount</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>COMPANY</h2>
+                <ul>
+                    <li><a href="#">Our Stores</a></li>
+                    <li><a href="#">Our Materials</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Bulk Orders</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- __________ : jquery cdn : _____________________  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <!--  -___________ : jquery min js cdn : ____________ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".team-slider").slick({
+                arrows: false,
+                dots: false,
+                infinite: false,
+                autoplay: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false,
+                        },
+                    },
+
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        },
+                    },
+
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+
+
+        // search - bar toggle : ============== >
+        const searchIcon = document.querySelector(".search-icon");
+        const closeSearch = document.querySelector(".close-search");
+        const searchpanel = document.getElementById("search-bar");
+
+        const open_search = () => {
+            if (searchpanel) {
+                searchpanel.style.height = `100%`;
+                searchpanel.style.borderRadius = `0`;
+            } else {
+                console.error("Search pannel not found!");
+            }
+        };
+
+        const close_search = () => {
+            if (searchpanel) {
+                searchpanel.style.height = `0`;
+                searchpanel.style.borderTopLeftRadius = `100%`;
+                searchpanel.style.borderTopRightRadius = `100%`;
+            } else {
+                console.error("Search pannel not found!");
+            }
+        };
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                searchpanel.style.height = `0`;
+                searchpanel.style.borderTopLeftRadius = `100%`;
+                searchpanel.style.borderTopRightRadius = `100%`;
+            }
+        });
+
+        searchIcon.addEventListener("click", (e) => {
+            e.preventDefault()
+            open_search()
+        });
+
+        closeSearch.addEventListener("click", close_search);
+    </script>
+</body>
+
+</html>

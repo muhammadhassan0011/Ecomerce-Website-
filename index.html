@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecomerce Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- Link Swiper's CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!--  bootstrap  -->
+  <!-- <script type="module" src="main.js" defer></script> -->
+</head>
+
+<body>
+  <header>
+    <nav class="navbar container">
+      <div>
+        <a href="index.html"><img src="./public/images/myntra_logo.webp" alt="logo" class="logo"></a>
+      </div>
+
+      <div>
+        <ul>
+          <li><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a class="nav-link" href="about.html">About&darr;</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="about.html" class="dropdown-item">Our Story</a></li>
+              <li><a href="team.html" class="dropdown-item">Our Team</a></li>
+              <li><a href="FAQs.html" class="dropdown-item">FAQs</a></li>
+            </ul>
+
+          </li>
+          <li><a class="nav-link" href="products.html">Products</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="icons">
+        <a href="" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>
+        <a href="profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a>
+        <a href="#"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+        <a href="addToCart.html" id="cartValue"><i class="fa-solid fa-cart-shopping"> 0</i><span>Cart</span></a>
+      </div>
+
+      <!--  ---------------------  : SEARCH BAR : ============================================= -->
+      <div id="search-bar">
+        <div class="btn_hover1 close-search">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <form class="search-form">
+          <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+          <input type="search" id="search-box" placeholder="Search your products here ...">
+          <button type="submit" class="search-btn">Search <span></span></button>
+        </form>
+      </div>
+
+    </nav>
+  </header>
+
+  <section id="hero-section" class="hero-section container">
+    <div class="hero-content">
+      <p class="hero-subheading">Myntra the house of products :)</p>
+      <h1 class="hero-heading">
+        Your Destination for
+      </h1>
+      <div class="multi-col">
+        <h1 class="hero-heading multi-txt">Cutting-Edge Gadgets!</h1>
+        <p class="blink"></p>
+      </div>
+      <p class="hero-para">
+        Welcome to Thapa eComStore, your ultimate destination for
+        cutting-edge gadgets! Explore the latest in tech innovation and
+        style with us. Shop now and discover a world of possibilities!
+      </p>
+      <div class="hero-btn">
+        <a href="products.html" class="btn">Explore Our Products</a>
+      </div>
+    </div>
+
+    <div class="section-hero-image" data-aos="fade-up" data-aos-delay="600">
+      <figure>
+        <img src="./public/images/heroSection.svg" alt="coding languages using html css js" />
+      </figure>
+    </div>
+  </section>
+
+  <!----------------------- SERVICES -SECTION : ___________________________  -->
+  <section class="services-container">
+    <h1>Our Services</h1>
+    <div class="services-content">
+      <div class="service-box">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h2>Worldwide Shipping & Fast Delivery</h2>
+        <p>Our shipping is done all over the countries with fast delivery, product will be delivered under 7 days.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fa-solid fa-rotate"></i>
+        <h2>Easy 30 Day Returns</h2>
+        <p>The product can be easily returnded under a month if our customers are not satisfied with it because <br>
+          Customer satisfaction is our satisfaction.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <h2>Money Back Guarantee</h2>
+        <p>Guarantee With In 30-Days to return the product and get our money on time with quick responce.</p>
+      </div>
+
+      <div class="service-box">
+        <i class="fa-solid fa-headset"></i>
+        <h2>Easy Online Support</h2>
+        <p>24/7 Any Time Support, Customer can cancel or change the selected product at any time before shipping. Feel
+          free to contact us.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===============  : Start Extra Product Section : ============= -->
+  <section class="swiper section-extra-product">
+    <div class="swiper-wrapper extra-container">
+
+      <div class="swiper-slide div-extra">
+        <div class="extra-text">
+          <p>New Year Sale</p>
+          <h3>Get And Extra 50% OFF</h3>
+          <a href="#">SHOW MORE</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="./public/images/laptop.png" alt="" />
+        </div>
+      </div>
+
+      <div class="swiper-slide div-extra">
+        <div class="extra-text">
+          <p>New Year Sale</p>
+          <h3>40% Discount On (Wearables)</h3>
+          <a href="#">SHOW MORE</a>
+        </div>
+        <div class="extra-img">
+          <img src="./public/images/headphoneEcom.png" alt="" />
+        </div>
+      </div>
+
+      <div class="swiper-slide div-extra">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>Get And Extra 50% OFF (Watch collection)</h3>
+          <a href="#">SHOW MORE</a>
+        </div>
+        <div class="extra-img">
+          <img src="./public/images/watch.png" alt="" />
+        </div>
+      </div>
+
+      <!-- <div class="swiper-slide div-extra">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>Get And Extra 50% OFF (Watch collection)</h3>
+          <a href="#">SHOW MORE</a>
+        </div>
+        <div class="extra-img">
+          <img src="./public/images/watch.png" alt="" />
+        </div>
+      </div>
+
+      <div class="swiper-slide div-extra">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>Get And Extra 50% OFF (Watch collection)</h3>
+          <a href="#">SHOW MORE</a>
+          </div>
+        <div class="extra-img">
+          <img src="./public/images/watch.png" alt="" />
+        </div>
+      </div>
+
+      <div class="swiper-slide div-extra">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>Get And Extra 50% OFF (Watch collection)</h3>
+          <a href="#">SHOW MORE</a>
+        </div>
+        <div class="extra-img">
+          <img src="./public/images/watch.png" alt="" />
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- ==================== : End Extra Product Section : ==================== -->
+
+  <!-- ========== Start Our Products Section ====================================== -->
+  <section class="section products-section">
+    <h1>Our Top Products</h1>
+    <div id="productContainer">
+
+    </div>
+    <span><i id="prev-slide" class="fa-solid fa-arrow-left slide-btn"></i></span>
+    <span><i id="next-slide" class="fa-solid fa-arrow-right slide-btn"></i></span>
+
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+
+    <div class="products-btn">
+      <a class="btn" href="products.html">View More Products</a>
+    </div>
+  </section>
+
+  <!-- =============== :  Start Product Template Section  : ================== -->
+  <template id="prodctTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information card">
+        <span class="category"></span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="" />
+        </div>
+        <h2 class="productName"></h2>
+
+        <div class="productRating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <!-- <p class="productDescription"></p> -->
+
+        <div class="productPriceElement">
+          <p class="productPrice"></p>
+          <p class="productActualPrice"></p>
+        </div>
+        <!-- </section> -->
+
+        <div class="productStockElement">
+          <p class="productProperty">Total Stocks Available:</p>
+          <p class="productStock"></p>
+        </div>
+
+        <div class="productQuantityElement">
+          <p class="productProperty">Quantity(Pieces)</p>
+          <div class="stockElement">
+            <button class="cartIncrement">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+        </div>
+
+        <div class="cart-btn-div">
+          <button class="add-to-cart-button">
+            <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+          </button>
+          <button class="wishList-button">
+            <i class="fa-regular fa-heart"></i> Wishlist
+          </button>
+        </div>
+      </article>
+    </div>
+  </template>
+
+  <!-- =========================================== : Products-section : END ============================ -->
+
+  <!--  ========================================== : Testimonial - section STARTS : =============================================== -->
+  <section class="section testimonial-section">
+    <div class="slider">
+
+      <div class="slide slider--1">
+        <div class="testimonial">
+          <h1>Best Customer Service Ever!</h1>
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, veniam molestias quidem amet
+            eos
+            maiores
+            beatae, accusantium omnis quam, illo laborum perspiciatis? Vero. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.</blockquote>
+
+          <div>
+
+          </div>
+
+          <address>
+            <img src="./public/images/profile-1.jpg" alt="">
+            <div class="testimonial-content">
+              <h2>Jamima James</h2>
+              <p>Lisbon, Portugal</p>
+
+              <div class="productRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
+
+      <div class="slide slider--2">
+        <div class="testimonial">
+          <h1>Excelent Packing & Great Quality Product :)</h1>
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, veniam molestias quidem amet
+            eos
+            maiores
+            beatae, accusantium omnis quam, illo laborum perspiciatis? Vero. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit.</blockquote>
+
+          <address>
+            <img src="./public/images/profile-2.jpg" alt="">
+            <div class="testimonial-content">
+              <h2>Aneela Kamal</h2>
+              <p>Pakistan, Lahore</p>
+
+              <div class="productRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
+
+
+      <div class="slide slider--3">
+        <div class="testimonial">
+          <h1>Quality is Awsome! And Delivery is on Time</h1>
+          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, veniam molestias quidem amet
+            eos
+            maiores
+            beatae, accusantium omnis quam, illo laborum perspiciatis? Vero. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. </blockquote>
+
+          <address>
+            <img src="./public/images/profile-3.jpg" alt="">
+            <div class="testimonial-content">
+              <h2>Maiami Coco</h2>
+              <p>Atlanta, Georgia</p>
+
+              <div class="productRating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
+
+
+
+      <button class="slide-btn slider-btn--left">&larr;</button>
+      <button class="slide-btn slider-btn--right">&rarr;</button>
+      <div class="dots"></div>
+    </div>
+  </section>
+
+
+  <section class="logo-section">
+    <div class="logo-slide">
+      <img src="./public/images/forbes.svg" alt="">
+      <img src="./public/images/barstool-store.svg" alt="">
+      <img src="./public/images/budweiser.svg" alt="">
+      <img src="./public/images/buzzfeed.svg" alt="">
+      <img src="./public/images/mrbeast.svg" alt="">
+      <img src="./public/images/menshealth.svg" alt="">
+      <img src="./public/images/macys.svg" alt="">
+    </div>
+
+    <div class="logo-slide">
+      <img src="./public/images/forbes.svg" alt="">
+      <img src="./public/images/barstool-store.svg" alt="">
+      <img src="./public/images/budweiser.svg" alt="">
+      <img src="./public/images/buzzfeed.svg" alt="">
+      <img src="./public/images/mrbeast.svg" alt="">
+      <img src="./public/images/menshealth.svg" alt="">
+      <img src="./public/images/macys.svg" alt="">
+    </div>
+  </section>
+
+  <section class="section section--sign-up">
+    <div class="sign-up--container">
+      <h1>Want First Dibs?</h1>
+      <p>Join our email list and be the first to know about new limited edition products,material innovations, and
+        lots
+        of other
+        fun updates.</p>
+
+      <div class="sign-up--content">
+        <input type="email" name="email" class="email" placeholder="Enter Your Email Address">
+        <button class="sign-up-btn">sign up</button>
+      </div>
+
+      <p class="note-txt">Note: You can opt-out at any time. See our <a href="#">Privacy Policy</a> and <a
+          href="#">Terms</a> .</p>
+    </div>
+  </section>
+
+  <!--  ----------- : Footer Section : ================= -->
+  <footer>
+    <div class="footer-logo">
+      <span class="logo-content">
+        <a href="#hero-section"><img src="./public/images/myntra_logo.webp" alt="logo" class="logo"></a>
+      </span>
+
+      <span class="copy-right">
+        <p>&copy;2024 In-Ecomerce, All Rights Reserved.
+          <a href="#">Terms</a>, <a href="">Privacy</a> and <a href="#">Accessibility</a>
+        </p>
+      </span>
+
+      <span>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-tiktok"></i></a>
+          <a href=""><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </span>
+    </div>
+
+    <div class="footer-container">
+      <div>
+        <h2>HELP</h2>
+        <ul>
+          <li><a href="#">1-888-963-8944</a></li>
+          <li><a href="#">1-814-251-9966 (Text)</a></li>
+          <li><a href="#">help@allbirds.com</a></li>
+          <li><a href="#">Returns/Exchanges</a></li>
+          <li><a href="#">FAQ/Contact Us</a></li>
+          <li><a href="#">Afterpay</a></li>
+          <li><a href="#">Payment Method :</a></li>
+          <li><img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" /></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>SHOP</h2>
+        <ul>
+          <li><a href="#">Computer Store</a></li>
+          <li><a href="#">Laptop Store</a></li>
+          <li><a href="#">help@allbirds.com</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Shoe Finder</a></li>
+          <li><a href="#">Socks</a></li>
+          <li><a href="#">Men's Apparel</a></li>
+          <li><a href="#">Women's Apparel</a></li>
+          <li><a href="#">Sales & Discount</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>COMPANY</h2>
+        <ul>
+          <li><a href="#">Our Stores</a></li>
+          <li><a href="#">Our Materials</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Partnerships</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Bulk Orders</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================= :  SHOW LOGIN SIGN MODAL  :  ============================================ -->
+  <div class="modal hidden">
+    <div class="btn--close-modal"><i class="fa-solid fa-xmark" style="color: #fff;"></i></div>
+    <div class="heading-div">
+      <h1 class="modal-heading">Get 10% off your first order when you sign up for your Special Offers! <i
+          class="fa-solid fa-bell" style="color: #ffffff;"></i></h1>
+      <p class="modal-subheading">We hate spam too. The only email we'll send will be the kind that you'll want.</p>
+    </div>
+
+    <div class="modal-content">
+      <p class="modal-para">Enter your Email below and click the box to subcribe to your E-mail . You'll recieve New
+        Product alerts,special offers, and Limited Edition notifications. </p>
+
+      <form action="#">
+        <input type="text" name="name" id="mod-first-name" placeholder="First Name">
+        <input type="text" name="name" id="mod-last-name" placeholder="Last Name">
+        <input type="email" name="email" id="mod-email" placeholder="Enter your Email Adress" required
+          aria-required="true" role="alert">
+      </form>
+
+      <span><input type="checkbox" id="modal-checkbox"> <label for="modal-checkbox">Click here to confirm your
+          subscription.</label></span>
+      <button class="modal-btn">Get 10% OFF</button>
+    </div>
+  </div>
+  <div class="overlay hidden"></div>
+
+  <!-- ======================== : onClick scroll up BTN  : ============================= -->
+  <button class="scroll-up"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button>
+
+  <script type="module" src="main.js"></script>
+  <!-- Swiper JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <!-- Initialize Swiper -->
+  <!-- <script type="text/javascript">
+    var swiper = new Swiper(".section-extra-product", {
+      // slidesPerView: 3,
+      // spaceBetween: 20,
+
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      speed: 1000,
+      // loop: true,
+      autoplay: {
+        delay: 2000,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1
+        },
+        768: {
+          slidesPerView: 2
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        }
+      }
+    }); -->
+  <!-- </script>/ -->
+
+</body>
+
+</html>

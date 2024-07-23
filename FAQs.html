@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- font -2  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- font - 3 -->
+
+
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar container">
+            <div>
+                <a href="#"><img src="./public/images/myntra_logo.webp" alt="logo" class="logo"></a>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="nav-link" href="about.html">About&darr;</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html" class="dropdown-item">Our Story</a></li>
+                            <li><a href="team.html" class="dropdown-item">Our Team</a></li>
+                            <li><a href="FAQs.html" class="dropdown-item">FAQs</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a class="nav-link" href="products.html">Products</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="icons">
+                <a href="" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a>
+                <a href="profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a>
+                <a href="#"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+                <a href="addToCart.html"><i class="fa-solid fa-cart-shopping"> 0</i><span>Cart</span></a>
+            </div>
+
+            <!--  ---------------------  : SEARCH BAR : ============================================= -->
+            <div id="search-bar">
+                <div class="btn_hover1 close-search">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+                <form class="search-form">
+                    <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                    <input type="search" id="search-box" placeholder="Search your products here ...">
+                    <button type="submit" class="search-btn">Search <span></span></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="faqs-section">
+        <div class="faqs-container">
+            <div class="faqs-titles">
+                <ul>
+                    <li><a href="#shipping" class="active">SHIPPING</a></li>
+                    <li><a href="#orders-and-payment">ORDERS AND PAYMENT</a></li>
+                    <li><a href="#tracking">TRACKING</a></li>
+                    <li><a href="#returns-and-exchanges">RETURNS AND EXCHANGES</a></li>
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="#others">OTHERS</a></li>
+                </ul>
+            </div>
+
+            <div class="faqs-content">
+                <div id="shipping">
+                    <h1>SHIPPING</h1>
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>HOW MUCH DOES SHIPPING COST?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>We offer Free Express Shipping with every order made normally through DHL Express or
+                                FedEx.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>HOW LONG UNTIL MY ORDER IS SENT OUT?</h3>
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>Our handling time takes 2-4 business days. This means that your order will generally be
+                                sent out within this period.
+                            </p>
+
+                            <p>Exceptionally, during Black Friday Sales some orders may take additional processing time
+                                due to overwhelming demand.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>WHEN WILL I RECEIVE MY ITEMS?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>Once we ship your merchandise, our <strong>Free Express Shipping</strong> method takes
+                                around 1-5 business
+                                days to deliver worldwide.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>DO YOU HAVE ANY SHIPPING INSURANCE?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>Yes, Package Protection is automatically added to the cart when you are shopping with us,
+                                you can always remove it in
+                                case you don't wish to be covered.
+                            </p>
+
+                            <p>This service protects you against stolen, lost or damaged parcels during transit, we
+                                higly recommend adding it to your
+                                order to avoid any inconviniences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="orders-and-payment">
+                    <h1>ORDERS AND PAYMENT</h1>
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>HOW DO I MAKE AN ORDER?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>Just click on a product you like and add it to cart. Then follow our easy and secure
+                                checkout process.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>HOW CAN APPLY MY DISCOUNT COUPON?</h3>
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>You can paste or type your coupon at the checkout page - on the coupon box included in
+                                your order summary - the box is
+                                below the products you want to buy. After pasting the code click on the "Apply" button
+                                and the discount will be deducted
+                                from your purchase value.
+                            </p>
+
+                            <p>Please note that you can only use one coupon per order since our discount coupons are not
+                                cumulative.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>WHAT IS YOUR STORE'S CURRENCY?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>All transactions and payments are processed in USD, however you can check the price
+                                conversion to your country's
+                                currency in the converter on the menu bar.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>WHAT PAYMENT METHODS DO YOU ACCEPT?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>We currently accept Afterpay, Apple Pay, Mastercard, Visa and American Express.
+                            </p>
+
+                            <p>All transactions are in US Dollars.</p>
+
+                            <p>All payments made on www.lookslikesummer.com are secure - we use the Secure Sockets Layer
+                                protocol (SSL) with an
+                                encryption key length of 128-bits (the highest level commercially available) - and we do
+                                not store any of your payment
+                                information.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tracking">
+                    <h1>TRACKING</h1>
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>HOW DO I TRACK MY ORDER?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>You can check the location of your order by entering your tracking number on the TRACK
+                                <a href="">YOUR ORDER</a>page.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>WHEN WILL MY TRACKING NUMBER BECOME ACTIVE?</h3>
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>Usually the tracking numbers will be active within 1-2 business days after the shipping
+                                confirmation email is sent.
+                                Please note that the tracking activity can suffer delays from customs and shipping
+                                processes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="returns-and-exchanges">
+                    <h1>RETURN AND EXCHANGES</h1>
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>WHAT IS YOUR RETURNS POLICY?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>We accept returns on Shoes and Handbags within 30 days of the purchase date, or 15 days
+                                after the arrival of the
+                                merchandise.
+                            </p>
+
+                            <p>We accept returns in the United States, Canada, and the EU - Orders from other
+                                countries/zones are considered Final Sale
+                                and, thus, are not eligible for the return/exchange process.
+                            </p>
+
+                            <p>Please make sure the merchandise is returned in the exact condition in which it was
+                                shipped, new and unused in order to
+                                receive a refund. This includes the original packaging and the box it came in.
+                            </p>
+
+                            <p>For more details please visit our <a href="">Returns & Exchanges</a> page
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>DO YOU OFFER EXCHANGES?</h3>
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>Yes, we offer free exchanges in the United States, Canada, Pakistan and China.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>HOW DO I START A RETURN?</h3>
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>You can start your return process <a href="">here</a>.
+
+                            <p>To start the process simply add your order number and email used to make the purchase.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>WHEN WILL I RECEIVE MY REFUND?</h3>
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>Once your return is received and inspected, the refund will be processed to the original
+                                payment method, during Sales
+                                Season please allow up to 10 business days for our team to process your refund once we
+                                receive your merchandise.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="products">
+                    <h1>PRODUCTS</h1>
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>ARE YOUR PRODUCTS MANUFACTURED ETHICALLY?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>All our products are made by happy human beings. We are committed to fair employment
+                                practices and the upholding of
+                                human rights.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>WHAT MATERIALS DO YOU USE?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>We believe that only through the best raw materials we are able to achieve the most
+                                amazingly unique products. For that
+                                reason, we maintain a sustainable long-lasting relation with only the best and most
+                                reliable suppliers. The material for
+                                every model is explicit in the product description.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="others">
+                    <h1>OTHERS</h1>
+                    <div class="faq">
+                        <div class="faqs-question">
+                            <h3>ANY QUESTION?</h3>
+
+                            <i class="fa-solid fa-chevron-down" style="color: #62034f;"></i>
+                        </div>
+
+                        <div class="faqs-answer">
+                            <p>You can contact us through our <a href="contact.html">CONTACT US</a> page! We
+                                will be happy
+                                to assist you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--sign-up">
+        <div class="sign-up--container">
+            <h1>Want First Dibs?</h1>
+            <p>Join our email list and be the first to know about new limited edition products,material innovations, and
+                lots
+                of other
+                fun updates.</p>
+
+            <div class="sign-up--content">
+                <input type="email" name="email" class="email" placeholder="Enter Your Email Address">
+                <button class="sign-up-btn">sign up</button>
+            </div>
+
+            <p class="note-txt">Note: You can opt-out at any time. See our <a href="#">Privacy Policy</a> and <a
+                    href="#">Terms</a> .</p>
+        </div>
+    </section>
+
+    <!--  ==================== : Footer Section : ================= -->
+    <footer>
+        <div class="footer-logo">
+            <span class="logo-content">
+                <a href="#hero-section"><img src="./public/images/myntra_logo.webp" alt="logo" class="logo"></a>
+            </span>
+
+            <span class="copy-right">
+                <p>&copy;2024 In-Ecomerce, All Rights Reserved.
+                    <a href="#">Terms</a>, <a href="">Privacy</a> and <a href="#">Accessibility</a>
+                </p>
+            </span>
+
+            <span>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </span>
+        </div>
+
+        <div class="footer-container">
+            <div>
+                <h2>HELP</h2>
+                <ul>
+                    <li><a href="#">1-888-963-8944</a></li>
+                    <li><a href="#">1-814-251-9966 (Text)</a></li>
+                    <li><a href="#">help@allbirds.com</a></li>
+                    <li><a href="#">Returns/Exchanges</a></li>
+                    <li><a href="#">FAQ/Contact Us</a></li>
+                    <li><a href="#">Afterpay</a></li>
+                    <li><a href="#">Payment Method :</a></li>
+                    <li><img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" /></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>SHOP</h2>
+                <ul>
+                    <li><a href="#">Computer Store</a></li>
+                    <li><a href="#">Laptop Store</a></li>
+                    <li><a href="#">help@allbirds.com</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Shoe Finder</a></li>
+                    <li><a href="#">Socks</a></li>
+                    <li><a href="#">Men's Apparel</a></li>
+                    <li><a href="#">Women's Apparel</a></li>
+                    <li><a href="#">Sales & Discount</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>COMPANY</h2>
+                <ul>
+                    <li><a href="#">Our Stores</a></li>
+                    <li><a href="#">Our Materials</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Bulk Orders</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-up"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button>
+
+
+    <script>
+        // search - bar toggle : ============== >
+        const searchIcon = document.querySelector(".search-icon");
+        const closeSearch = document.querySelector(".close-search");
+        const searchpanel = document.getElementById("search-bar");
+
+        const open_search = () => {
+            if (searchpanel) {
+                searchpanel.style.height = `100%`;
+                searchpanel.style.borderRadius = `0`;
+            } else {
+                console.error("Search pannel not found!");
+            }
+        };
+
+        const close_search = () => {
+            if (searchpanel) {
+                searchpanel.style.height = `0`;
+                searchpanel.style.borderTopLeftRadius = `100%`;
+                searchpanel.style.borderTopRightRadius = `100%`;
+            } else {
+                console.error("Search pannel not found!");
+            }
+        };
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                searchpanel.style.height = `0`;
+                searchpanel.style.borderTopLeftRadius = `100%`;
+                searchpanel.style.borderTopRightRadius = `100%`;
+            }
+        });
+
+        searchIcon.addEventListener("click", (e) => {
+            e.preventDefault()
+            open_search()
+        });
+        closeSearch.addEventListener("click", close_search);
+
+
+        // =================== : FAQ : toggle : ======================================= > 
+        const faqs = document.querySelectorAll(".faq");
+        let plus = document.getElementsByClassName("plus");
+        let minus = document.getElementsByClassName("minus");
+
+        faqs.forEach((faq) => {
+            faq.addEventListener("click", () => {
+                let result = faq.classList.toggle("active");
+
+                if (result === true) {
+                    minus.style.display = "block";
+                };
+
+            });
+        })
+
+        // < ===============================  : Scroll to Top btn : ========================================================= >
+        const scrollTopBtn = document.querySelector(".scroll-up");
+
+        window.onscroll = () => {
+            scrollFunction();
+        };
+
+        const scrollFunction = () => {
+            if (
+                document.body.scrollTop > 350 ||
+                document.documentElement.scrollTop > 350
+            ) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        scrollTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+    </script>
+</body>
+
+</html>
