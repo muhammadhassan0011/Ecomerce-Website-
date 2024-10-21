@@ -46,3 +46,5 @@ export const addToCart = (id) => {
 
   showToast("add", id);
 };
+//  Initial Function call to render the CartValue Even on Load/Refresh : > 
+getCartProductFromLS()

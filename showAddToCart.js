@@ -1,4 +1,4 @@
-import products from "../vite-project/api/products.json";
+import products from "./api/products.json";
 import { getCartProductFromLS } from "./getCartProductFromLS";
 import { incrementDecrement } from "./incrementDecrement";
 import { removeProductFromCart } from "./removeProductFromCart";
